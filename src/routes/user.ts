@@ -6,7 +6,7 @@ import { authenticateUser } from "../middlewares/authenticateUser";
 
 const user = express.Router();
 
-user.post("/register", authenticateUser, validateUser, registerUser);
+user.post("/register", validateUser, registerUser);
 
 user.post("/login", loginUser);
 
